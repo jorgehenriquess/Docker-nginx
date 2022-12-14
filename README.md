@@ -1,29 +1,13 @@
-# Desafio Nginx com Node.js
+Nesse desafio você colocará em prática o que aprendemos em relação a utilização do nginx como proxy reverso. A idéia principal é que quando um usuário acesse o nginx, o mesmo fará uma chamada em nossa aplicação node.js. Essa aplicação por sua vez adicionará um registro em nosso banco de dados mysql, cadastrando um nome na tabela people.
 
-Desafio apresentado no curso Full Cycle (módulo Docker).
+O retorno da aplicação node.js para o nginx deverá ser:
 
-O desafio consiste em apresentar uma mensagem na tela utilizando nginx com node.js.
+<h1>Full Cycle Rocks!</h1>
 
-Quando uma chamada for feita a aplicação, esta deverá salvar um registro no bando de dados (MySQL). 
-Em seguida, a página deverá apresentar a mensagem ```Full Cycle Rocks!```, logo abaixo uma lista com os registros do banco.
+- Lista de nomes cadastrada no banco de dados.
 
-Nota: A página deverá ser construída em node mas será acessada pelo nginx através de um proxy reverso!
+Gere o docker-compose de uma forma que basta apenas rodarmos: docker-compose up -d que tudo deverá estar funcionando e disponível na porta: 8080.
 
----
+Suba tudo em um repositório e faça a entrega.
 
-### Para rodar a aplicação utilize o docker-compose.
-
-```
-docker-compose up -d 
-```
-
-Dentro de alguns instantes a aplicação estará no ar.
-
----
-
-### Para acessar, digite o seguinte endereço no navegador:
-
-[http://localhost:8080/](http://localhost:8080/)
-
----
-OBS: caso apresente erro 502, aguarde mais alguns segundos e atualize a página.
+* A linguagem de programação para este desafio é Node/JavaScript.
